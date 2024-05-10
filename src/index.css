@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply h-[100dvh] !pr-0 !overflow-auto text-black;
+}
+
+body,
+#root {
+  @apply h-full;
+}
+
+b,
+strong {
+  @apply font-bold;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+/*INPUTS*/
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+textarea {
+  @apply appearance-none outline-0 border-0 px-0 text-secondary-title !text-black caret-additional-100 placeholder:text-gray-200;
+
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none;
+
+  -webkit-box-shadow: 0 0 0 1000px #f3f7fa inset !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+
+}
+
+.input-border-wrapper {
+  @apply w-full rounded-sm bg-gray-150 border-[1px] border-gray-150;
+}
+
+.input-border-wrapper.focused {
+  @apply border-gray-100 border-[1px];
+}
+
+.input-border-wrapper.error {
+  @apply border-system-200;
+}
+
+.input-border-wrapper.focused-error {
+  @apply shadow-additional-500 shadow-solid-2;
+}
+
+.input-border-wrapper.disabled,
+input[aria-disabled='true'] {
+  @apply !border-gray-400 !bg-secondary placeholder:!text-gray-new-300;
+}
+
+.input-border-wrapper.disabled input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='email'],
+input[aria-disabled='true'] {
+  -webkit-box-shadow: none !important;
+}
+
+/*CONTAINERS*/
+
+.container-x {
+  @apply max-w-[1440px] mx-auto px-[16px] tablet:px-[64px] laptop:px-[100px];
+}
+
+.container-y {
+  @apply py-[64px] tablet:py-[80px] laptop:py-[100px];
+}
+
+/*scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 hover:bg-gray-300;
+  border-radius: 5px;
+}
+
+.triangle {
+  --b:2px; /* control the border thickness */
+
+  width: 30px;
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% 0,100% 100%,0 100%,50% 0,50% var(--b),calc(var(--b)*cos(30deg)) calc(100% - var(--b)/2),calc(100% - var(--b)*cos(30deg)) calc(100% - var(--b)/2),50% var(--b));
+  background: linear-gradient(180deg, rgba(128,148,179,1) 0%, rgba(128,148,179,1) 76%, rgba(255,255,255,1) 84%, rgba(255,255,255,1) 100%);
+}
+
+
+
