@@ -64,7 +64,7 @@ const PaymentMethods = () => {
           </Flex.Wrapper>
         </div>
 
-        <div className="min-w-[355px] flex-1">
+        <div className="tablet:min-w-[355px] flex-1">
           <Flex.Wrapper column gap="10px">
             <Subtitle2 className="text-gray-100">Ведіть наступні дані</Subtitle2>
             <Card />
