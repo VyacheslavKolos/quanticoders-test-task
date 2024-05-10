@@ -21,7 +21,7 @@ const IndividualFormFields = () => (
       <TextFieldController name="country" label="Країна" />
 
       <Flex.Wrapper gap="20px">
-        <TextFieldController name="city" label="Країна" />
+        <TextFieldController name="city" label="Місто" />
 
         <TextFieldController name="state" label="Штат, район" />
       </Flex.Wrapper>

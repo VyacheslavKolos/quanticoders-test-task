@@ -17,27 +17,27 @@ const PaymentMethods = () => {
   const [activeMethod, setActiveMethod] = useState(0);
   const helpsTabs: IMethod[] = [
     {
-      iconKey: IconKeys.Hand,
+      iconKey: IconKeys.Visa,
       title: 'Карта Visa/Mastercard',
       id: 0,
     },
     {
-      iconKey: IconKeys.Wallet,
+      iconKey: IconKeys.Privat,
       title: 'Приват24',
       id: 1,
     },
     {
-      iconKey: IconKeys.Clothes,
+      iconKey: IconKeys.Atm,
       title: 'Термінали України',
       id: 2,
     },
     {
-      iconKey: IconKeys.Heart,
+      iconKey: IconKeys.WebMoney,
       title: 'WebMoney',
       id: 3,
     },
     {
-      iconKey: IconKeys.Heart,
+      iconKey: IconKeys.PayPal,
       title: 'Paypal',
       id: 4,
     },
