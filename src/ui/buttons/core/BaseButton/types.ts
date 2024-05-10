@@ -1,5 +1,4 @@
 import { ButtonHTMLAttributes } from 'react';
-import { ButtonIconsBodyProps } from '../ButtonIconsBody';
 
 export enum ButtonSizes {
   Reset,
@@ -7,12 +6,7 @@ export enum ButtonSizes {
   Middle,
 }
 
-export type BaseButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
-  Omit<ButtonIconsBodyProps, 'children'> & {
-    isLoading?: boolean;
-    size?: ButtonSizes;
-    spinnerClassName?: string;
-    iconClassName?: string;
-  } & {
-    iconsBodyClass?: string;
-  };
+export type BaseButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  isLoading?: boolean;
+  size?: ButtonSizes;
+};

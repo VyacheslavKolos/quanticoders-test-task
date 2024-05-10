@@ -15,7 +15,6 @@ const PrimaryButton: FC<Props> = ({ children, className, ...props }) => (
       'disabled:bg-gray-400 disabled:text-gray-200 disabled:pointer-events-none',
       className,
     )}
-    spinnerClassName="fill-gray-400 "
   >
     {children}
   </BaseButton>

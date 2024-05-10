@@ -1,14 +1,14 @@
 import { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import FieldHelpText, { IHelpText } from './FieldHelpText.tsx';
+import FieldHelpText from './FieldHelpText.tsx';
 
 export type FieldWrapperProps = {
   children: ReactNode;
   label?: string;
   forId?: string;
   error?: boolean;
-  helpText?: IHelpText | string;
+  helpText?: string;
   className?: string;
   errorClassName?: string;
   required?: boolean;
