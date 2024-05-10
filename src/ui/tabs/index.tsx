@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 import { useFormContext } from 'react-hook-form';
+
 import Flex from '../layout/Flex.tsx';
 import TabItem from './core/TabItem.tsx';
 import { ClassName } from '../../constants/types/prop.types.ts';

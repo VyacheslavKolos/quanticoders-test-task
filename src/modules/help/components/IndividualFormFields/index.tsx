@@ -13,7 +13,6 @@ const IndividualFormFields = () => (
 
       <TextFieldController name="companyName" label="Назва компанії, організації" />
       <TextFieldController name="email" label="Email-адрес" />
-      {/* <TextFieldController name="phoneNumber" label="Номер телефону" /> */}
       <PhoneNumberController name="phoneNumber" label="Номер телефону" />
     </Flex.Wrapper>
 

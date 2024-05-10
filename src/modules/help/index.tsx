@@ -2,7 +2,6 @@ import Flex from '../../ui/layout/Flex.tsx';
 import TabsBlock from './components/TabsBlock';
 import MainText from '../../ui/typography/MainText.tsx';
 import FormLayout from '../../ui/layout/core/FormLayout.tsx';
-
 import HelpsTabs from '../../ui/helps-tabs';
 import Container from '../../ui/layout/Container.tsx';
 
