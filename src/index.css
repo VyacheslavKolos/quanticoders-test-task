@@ -62,12 +62,12 @@ textarea {
 }
 
 .input-border-wrapper.focused-error {
-  @apply shadow-additional-500 shadow-solid-2;
+  @apply shadow-additional-500 shadow-solid-1;
 }
 
 .input-border-wrapper.disabled,
 input[aria-disabled='true'] {
-  @apply !border-gray-400 !bg-secondary placeholder:!text-gray-new-300;
+  @apply !border-gray-400 !bg-secondary placeholder:!text-gray-300;
 }
 
 .input-border-wrapper.disabled input[type='text'],

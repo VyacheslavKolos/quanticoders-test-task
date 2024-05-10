@@ -11,7 +11,7 @@ const PrimaryButton: FC<Props> = ({ children, className, ...props }) => (
     {...props}
     className={classNames(
       'bg-primary text-white',
-      'hover:shadow-solid-3 hover:shadow-additional-200 transition-all',
+      'hover:shadow-solid-3 hover:shadow-additional-500 transition-all',
       'disabled:bg-gray-400 disabled:text-gray-200 disabled:pointer-events-none',
       className,
     )}

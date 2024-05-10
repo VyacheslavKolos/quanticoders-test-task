@@ -21,7 +21,7 @@ const HelpsTabs = () => {
     formState: { isValid, isDirty },
   } = useFormContext();
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(1);
   const helpsTabs: IHelpTab[] = [
     {
       iconKey: IconKeys.Hand,
