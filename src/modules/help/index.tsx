@@ -13,12 +13,16 @@ const Help = () => (
         iCenter
         className="bg-white p-5 tablet:py-10 tablet:px-14 rounded-lg w-full "
       >
-        <h1 className="text-blue-100 text-h1 tablet:text-large-title">Заповніть форму</h1>
+        <h1 className="text-blue-100 text-h1 tablet:text-large-title text-center">
+          Заповніть форму
+        </h1>
 
         <FormLayout>
           <TabsBlock />
 
-          <h1 className="text-blue-100 text-h1 tablet:text-large-title">Види допомоги</h1>
+          <h1 className="text-blue-100 text-h1 tablet:text-large-title text-center">
+            Види допомоги
+          </h1>
           <MainText className="text-gray-200 mt-2">Ви можете змінити вид допомоги</MainText>
 
           <HelpsTabs />
